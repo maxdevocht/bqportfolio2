@@ -146,6 +146,38 @@ main .content .work h2 {
     margin-bottom: 40px;
 }
 
+.img_box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.slider_wrapper {
+    padding: 30px 1px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.splide__arrow {
+    opacity: 1;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-green);
+}
+
+.splide__pagination__page {
+    bottom: -2rem;
+    color: var(--color-red);
+}
+
+.slider_wrapper .splide__pagination__page.is-active {
+    opacity: 1;
+    background-color: var(--color-red);
+}
+
+/*
+
 .slider-container {
 	padding: 20px auto;
 }
@@ -155,6 +187,8 @@ main .content .work h2 {
 	max-width: 650px;
 	margin: 20px auto;
 }
+
+*/
 
 .slider {
 	display: flex;
@@ -167,6 +201,8 @@ main .content .work h2 {
 	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar Firefox */
 }
+
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .slider::-webkit-scrollbar {
