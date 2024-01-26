@@ -154,32 +154,19 @@ main .content .work h2 {
 }
 
 .slider_wrapper {
-    padding: 30px 1px;
+    padding: 10px 1px 30px 1px;
     max-width: 700px;
-    overflow: hidden; /* Ensure the gradient overflow is hidden */
-    position: relative; /* Establishes positioning context for absolute positioned gradients */
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-/* Gradient for the left side */
-.slider_wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px; /* Adjust as needed */
-    height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--color-black));
-}
-
-/* Gradient for the right side */
-.slider_wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px; /* Adjust as needed */
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-black));
+.slider_wrapper h2 {
+    font-size: 36px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 100px;
+    padding-top: 30px;
 }
 
 .splide__arrow {
@@ -211,29 +198,28 @@ main .content .work h2 {
 	margin: 20px auto;
 }
 
-*/
 
 .slider {
-	display: flex;
+    display: flex;
 	aspect-ratio: 16 / 9;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
-
+    
 	border-radius: 0.2rem;
-	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-	scrollbar-width: none; /* Hide scrollbar Firefox */
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
 }
 
 
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+
 .slider::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .slider img {
-	flex: 1 0 100%;
+    flex: 1 0 100%;
 	scroll-snap-align: start;
 	object-fit: cover;
     width: 100%;
@@ -242,7 +228,7 @@ main .content .work h2 {
 }
 
 .slider-nav {
-	display: flex;
+    display: flex;
 	column-gap: 1rem;
 	position: absolute;
 	bottom: 1.25rem;
@@ -252,7 +238,7 @@ main .content .work h2 {
 }
 
 .slider-nav a {
-	width: 0.5rem;
+    width: 0.5rem;
 	height: 0.5rem;
 	border-radius: 50%;
 	background-color: #fff;
@@ -261,7 +247,7 @@ main .content .work h2 {
 }
 
 .slider-nav a:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .content .beschrijving {
@@ -273,6 +259,7 @@ main .content .work h2 {
     padding: 0px 0;
     margin-bottom: 40px;
 }
+*/
 
 /*
 .product {
