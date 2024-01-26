@@ -6,7 +6,7 @@ var splide = new Splide( '.splide', {
     type: 'loop',
     drag: 'free',
     snap: true,
-    autoplay: true,
+    autoplay: false,
     breakpoints: {
       640: {
         perPage: 2,

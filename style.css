@@ -156,7 +156,30 @@ main .content .work h2 {
 .slider_wrapper {
     padding: 30px 1px;
     max-width: 700px;
-    margin: 0 auto;
+    overflow: hidden; /* Ensure the gradient overflow is hidden */
+    position: relative; /* Establishes positioning context for absolute positioned gradients */
+}
+
+/* Gradient for the left side */
+.slider_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; /* Adjust as needed */
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--color-black));
+}
+
+/* Gradient for the right side */
+.slider_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px; /* Adjust as needed */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--color-black));
 }
 
 .splide__arrow {
