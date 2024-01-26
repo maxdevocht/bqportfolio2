@@ -160,6 +160,12 @@ main .content .work h2 {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 820px) {
+    .slider_wrapper {
+        margin-right: 40px;
+    }
+}
+
 .slider_wrapper h2 {
     font-size: 36px;
     font-family: 'PT Mono', sans-serif;
