@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BQ Music</title>
+</head>
+
+<body>
+
+    <section id="sidebarSection" class="sidebar">
+        <div class="home">
+            <ul>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#f2f2f2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                 </svg></a></li>
+                <li><a href="#home">_Home</a></li>
+                <li><a href="#work">_Recent Werk</a></li>
+                <li><a href="#review">_Reviews</a></li>
+                <li><a href="#artiest">_Artiesten</a></li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><a href="https://www.facebook.com/BQpassivetone">_Facebook</a></li>
+                <li><a href="https://twitter.com/Bqmusic">_X</a></li>
+                <li><a href="https://www.instagram.com/bqmusic">_Instagram</a></li>
+                <li><a href="https://www.etsy.com/shop/BQmusic?fbclid=IwAR0o1SB_9czAXPARyTmJ-40rpDwGwZa9VjSMvunckedbf9Ozdse7eRuLdJE">_Etsy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <nav>
+        <div class="home">
+            <ul>
+                <li class="hideOnMobile"><a href="#home">_Home</a></li>
+                <li class="hideOnMobile"><a href="#work">_Recent Werk</a></li>
+                <li class="hideOnMobile"><a href="#review">_Reviews</a></li>
+                <li class="hideOnMobile"><a href="#artiest">_Artiesten</a></li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li class="hideOnMobile"><a href="https://www.facebook.com/BQpassivetone">_Facebook</a></li>
+                <li class="hideOnMobile"><a href="https://twitter.com/Bqmusic">_X</a></li>
+                <li class="hideOnMobile"><a href="https://www.instagram.com/bqmusic">_Instagram</a></li>
+                <li class="hideOnMobile"><a href="https://www.etsy.com/shop/BQmusic?fbclid=IwAR0o1SB_9czAXPARyTmJ-40rpDwGwZa9VjSMvunckedbf9Ozdse7eRuLdJE">_Etsy</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#f2f2f2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l16 0"></path>
+                    <path d="M4 12l16 0"></path>
+                    <path d="M4 18l16 0"></path>
+                 </svg></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="header-mobile">
+        <div class="title">
+            <div class="logo">
+                <img src="/img/logo.svg">
+                <h1><a href="#">BQ Music.</a></h1>
+            </div>
+            <h2>Specialist in custom gitaareffecten</h2>
+            <p>_Interesse? <a href="mailto:info@bqmusic.nl">Get in touch</a></p>
+        </div>
+        <div class="bio">
+            <p>Hey 👋, mijn naam is Bas Becu. Sinds 2012 is BQ Music dé plek voor unieke geluiden. Ontdek vintage gitaareffecten voorbij prijzige replica's. <br>Mijn focus? Spot-on replica's en op maat gemaakte meesterwerken tegen een redelijke prijs. Specialiteiten? Maatwerk kabelbomen en betaalbare passieve toonregeling. Ontdek jouw unieke geluid bij BQ Music!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="work">
+                <h2 id="work">Recent Werk -</h2>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide1-1" src="/img/gtr14.svg" alt="Brooks Bass" />
+                            <img id="slide1-2" src="/img/gtr15.svg" alt="Brooks Bass" />
+                            <img id="slide-3" src="img/gtr16.svg" alt="Brooks Bass" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide1-1"></a>
+                            <a href="#slide1-2"></a>
+                            <a href="#slide1-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>SansAmp Overdrive & Aguilar TLC Compressor</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide2-1" src="/img/gtr21.svg" alt="Jazzbass X-blend Wiring" />
+                            <img id="slide2-2" src="/img/8.svg" alt="Jazzbass X-blend Wiring" />
+                            <img id="slide2-3" src="img/9.svg" alt="Jazzbass X-blend Wiring" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide2-1"></a>
+                            <a href="#slide2-2"></a>
+                            <a href="#slide2-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>Jazzbass X-blend Wiring</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide3-1" src="/img/20.svg" alt="Custom-made PreAmps" />
+                            <img id="slide3-2" src="/img/32.svg" alt="Custom-made PreAmps" />
+                            <img id="slide3-3" src="img/33.svg" alt="Custom-made PreAmps" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide3-1"></a>
+                            <a href="#slide3-2"></a>
+                            <a href="#slide3-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>Custom-made PreAmps</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide4-1" src="/img/17.svg" alt="Brooks Bass; Master Volume and Dual Output" />
+                            <img id="slide4-2" src="/img/15.svg" alt="Brooks Bass; Master Volume and Dual Output" />
+                            <img id="slide4-3" src="img/18.svg" alt="Brooks Bass; Master Volume and Dual Output" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide4-1"></a>
+                            <a href="#slide4-2"></a>
+                            <a href="#slide4-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>Brooks Bass; Master Volume and Dual Output</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide5-1" src="/img/23.svg" alt="POT Overdrive; based on the King of Tone" />
+                            <img id="slide5-2" src="/img/24.svg" alt="POT Overdrive; based on the King of Tone" />
+                            <img id="slide5-3" src="img/25.svg" alt="POT Overdrive; based on the King of Tone" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide5-1"></a>
+                            <a href="#slide5-2"></a>
+                            <a href="#slide5-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>POT Overdrive; based on the King of Tone</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide6-1" src="/img/13.svg" alt="SWUNG Guitar Wiring" />
+                            <img id="slide6-2" src="/img/14.svg" alt="SWUNG Guitar Wiring" />
+                            <img id="slide6-3" src="img/12.svg" alt="SWUNG Guitar Wiring" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide6-1"></a>
+                            <a href="#slide6-2"></a>
+                            <a href="#slide6-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>SWUNG Guitar Wiring</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide7-1" src="/img/27.svg" alt="Wiring Harness" />
+                            <img id="slide7-2" src="/img/36.svg" alt="Wiring Harness" />
+                            <img id="slide7-3" src="img/37.svg" alt="Wiring Harness" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide7-1"></a>
+                            <a href="#slide7-2"></a>
+                            <a href="#slide7-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>Wiring Harness</h2>
+                </div>
+
+                <section class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img id="slide8-1" src="/img/28.svg" alt="Authentic Rickenbacker in Stereo" />
+                            <img id="slide8-2" src="/img/gtr15.svg" alt="Authentic Rickenbacker in Stereo" />
+                            <img id="slide8-3" src="img/gtr16.svg" alt="Authentic Rickenbacker in Stereo" />
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide8-1"></a>
+                            <a href="#slide8-2"></a>
+                            <a href="#slide8-3"></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="beschrijving">
+                    <h2>Authentic Rickenbacker in Stereo</h2>
+                </div>
+
+                <!--
+                <div class="product">
+                    <div class="cards">
+                        <div class="card">
+                            <img src="/img/gtr14.svg">
+                            <div class="beschrijving">
+                                <h2>SansAmp Overdrive & Aguilar TLC Compressor</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/gtr21.svg">
+                            <div class="beschrijving">
+                                <h2>Jazzbass X-blend Wiring</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/gtr52.svg">
+                            <div class="beschrijving">
+                                <h2>Custom-made PreAmps</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/gtr43.svg">
+                            <div class="beschrijving">
+                                <h2>Brooks Bass; Master Volume and Dual Output</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/bq met normale achtergrond/23.svg">
+                            <div class="beschrijving">
+                                <h2>POT Overdrive; based on the King of Tone</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/bq met normale achtergrond/13.svg">
+                            <div class="beschrijving">
+                                <h2>SWUNG Guitar Wiring</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/bq met normale achtergrond/27.svg">
+                            <div class="beschrijving">
+                                <h2>Wiring Harness</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/bq met normale achtergrond/28.svg">
+                            <div class="beschrijving">
+                                <h2>Authentic Rickenbacker in Stereo</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/bq met normale achtergrond/29.svg">
+                            <div class="beschrijving">
+                                <h2>Custom-made Effects Pedals</h2>
+                                <a href="#"><i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <div id="review" class="review">
+                <h2>Reviews -</h2>
+                <div class="quote">
+                    <h3>"Uitstekende verkoper! De V12 is een briljant ontworpen toonregeling! Het supernette soldeerwerk is zo'n genot om naar te kijken dat het bijna jammer is dat je het achter een slagplaat moet verbergen."</h3>
+                    <h4>Tjarko - Etsy</h4>
+                </div>
+                <div class="quote">
+                    <h3>"My Twelve String Brooks Bass has a Master volume control. Plus two output jacks. Each out is dedicated to its own pickup. But when you take out the bridge output jack, the signal of both pickups goes to the remaining output. A very clever solution by BQ Music!"</h3>
+                    <h4>Rob van den Broek - The Gibson Bass Book</h4>
+                </div>
+                <div class="quote">
+                    <h3>"De nieuwe bas elektronica overtrof mijn verwachtingen. Wat een mooie kwaliteit en het soldeerwerk van Bas is echt uitmuntend. Een absolute aanrader!"</h3>
+                    <h4>Danny - Etsy</h4>
+                </div>
+            </div>
+            <div id="artiest" class="artist">
+                <h2>Artiesten -</h2>
+                <div class="artiest">
+                    <img src="/img/jet.svg">
+                    <h3>- Jet Rebel</h3>
+                </div>
+                <div class="artiest">
+                    <img src="/img/ciao.svg">
+                    <h3>- Ciao Lucifer</h3>
+                </div>
+                <div class="artiest">
+                    <img src="/img/hout.svg">
+                    <h3>- Van Dik Hout</h3>
+                </div>
+                <div class="artiest">
+                    <img src="/img/chris.svg">
+                    <h3>- Chris Bickley</h3>
+                </div>
+            </div>
+            <p class="contact">_Is BQ Music wat je zoekt? Stuur een <a href="mailto:info@bqmusic.nl">Email</a></p>
+            <p class="email">info@bqmusic.nl</p>
+            <p class="copyright">Copyright <i class="ri-copyright-line"></i> 2023 BQ Music. All Rights Reserved.</p>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

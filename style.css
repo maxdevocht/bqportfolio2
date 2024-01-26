@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300&family=PT+Mono&family=Rubik:wght@500;600;700;800&display=swap');
+
+:root {
+    --color-white: #f2f2f2;
+    --color-black: #1a1a1a;
+    --color-grey: #7f7f7f;
+    --color-green: #04b861;
+    --color-red: #f15726;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+header {
+    max-width: 1200px;
+    margin: 133px 92px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
+}
+
+.title {
+    color: var(--color-white);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+    transition: all 3s ease;
+}
+
+.title .logo img {
+    width: 50px;
+
+}
+
+.title .logo h1 a {
+    color: var(--color-white);
+    font-size: 48px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.title .logo:hover {
+    text-decoration: underline;
+}
+
+.title h2 {
+    font-size: 36px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+}
+
+.title p {
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-green);
+}
+
+.title p a {
+    color: var(--color-green);
+    text-decoration: underline;
+}
+
+.title p a:hover {
+    text-decoration: none;
+}
+
+.bio {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.bio p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'PT Mono', sans-serif;
+    line-height: 2;
+    color: var(--color-white);
+}
+
+main {
+    margin-top: 100px;
+    max-width: 1200px;
+    margin: 133px 92px;
+    margin-bottom: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
+}
+
+main .content {
+    color: var(--color-white);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main .content .work {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+main .content .work h2 {
+    font-size: 36px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.slider-container {
+	padding: 20px auto;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 650px;
+	margin: 20px auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+
+	border-radius: 0.2rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+    width: 100%;
+    height: auto;
+    
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.content .beschrijving {
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0px 0;
+    margin-bottom: 40px;
+}
+
+/*
+.product {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cards {
+    height: auto;
+    padding: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card {
+    height: auto;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 3px;
+}
+  
+.card img {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.card .beschrijving {
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+  
+.card .beschrijving a {
+    text-decoration: none;
+    color: var(--color-grey);
+    font-size: 36px;
+    transition: all ease;
+}
+
+.card .beschrijving a:hover {
+    color: var(--color-white);
+}
+*/
+
+main .content .review h2 {
+    font-size: 36px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.review .quote {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.review .quote h3 {
+    font-size: 22px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+}
+
+.review .quote h4 {
+    font-size: 18px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+    color: var(--color-grey);
+    margin-top: 20px;
+}
+
+main .content .artist {
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+main .content .artist h2 {
+    font-size: 36px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.artiest {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.artiest img {
+    width: 15%;
+}
+
+.artiest h3 {
+    font-size: 22px;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: 400;
+}
+
+main .content .contact {
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-red);
+    margin-top: 50px;
+}
+
+main .content .email {
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-red);
+    margin-top: 10px;
+}
+
+main .content .contact a{
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-red);
+    text-decoration: underline;
+}
+
+main .content .contact a:hover{
+    text-decoration: none;
+}
+
+main .content .copyright {
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-grey);
+    margin-top: 90px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 820px) {
+    header {
+        margin: 50px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .bio {
+        max-width: 100%;
+    }
+
+    main {
+        margin: 50px;
+        margin-right: 40px;
+    }
+
+    .slider-container{
+        margin-right: 40px;
+    }
+
+    main .content .work .slider-container .slider-wrapper,
+    .slider,
+    .slider img,
+    .work .beschrijving {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .slider .beschrijving {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review .quote,
+    .artiest {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .artiest img {
+        width: 15%;
+    }
+}
+
+/*NAVBAR*/
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 180px; /* Adjust the width as needed */
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    gap: 50px;
+}
+
+/* Style your navbar links, icons, or other content as needed */
+nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+nav a {
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Adjust the styling for the active link if needed */
+nav a:hover {
+    color: var(--color-red);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px; /* Adjust the width as needed */
+    background-color: #1a1a1a25;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1500; /* Ensure the navbar is above other elements */
+    gap: 50px;
+    padding: 0 40px;
+}
+
+.sidebar li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sidebar a {
+    width: 100%;
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar a:hover {
+    color: var(--color-red);
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px; /* Adjust the top value as needed */
+    right: 20px; /* Adjust the right value as needed */
+    z-index: 2000; /* Ensure the button is above other elements */
+    background-color: var(--color-black);
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width: 1200px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    nav {
+        width: 50px;
+        background-color: none;
+    }
+    
+}
+
+@media(max-width: 400px){
+    .sidebar {
+        width: 100%;
+        padding: 0 80px;
+    }
+}
